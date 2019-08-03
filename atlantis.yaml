@@ -2,30 +2,30 @@ version: 3
 
 projects:
 - name: demo-atlantis
-  dir: demo-atlantis
+  dir: demo-atlantis/password
   autoplan:
-    when_modified: ["**/*.tf*", "**/*.hcl"]
+    when_modified: ["**/*.hcl", "**/*.tf*"]
 
 - name: central
   dir: central
   autoplan:
-    when_modified: ["*.hcl", "*.tfvars"]
+    when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: central
 
 - name: development
   dir: development
   autoplan:
-    when_modified: ["*.hcl", "*.tfvars"]
+    when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: development
 
 - name: staging
   dir: staging
   autoplan:
-    when_modified: ["*.hcl", "*.tfvars"]
+    when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: staging
 
 - name: production
   dir: production
   autoplan:
-    when_modified: ["*.hcl", "*.tfvars"]
+    when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: production
