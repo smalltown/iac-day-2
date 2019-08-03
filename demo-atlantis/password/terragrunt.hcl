@@ -10,11 +10,6 @@ terraform {
   source = "github.com/smalltown/tf-demo//modules/password?ref=v0.0.1"
 }
 
-# Include all settings from the root terraform.tfvars file
-include {
-  path = find_in_parent_folders()
-}
-
 inputs = {
   password_length = 25
 }
