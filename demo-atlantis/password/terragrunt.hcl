@@ -16,5 +16,5 @@ include {
 }
 
 inputs = {
-  password_length = 24
+  password_length = 25
 }
