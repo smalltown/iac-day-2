@@ -1,10 +1,10 @@
 version: 3
 
 projects:
-#- name: demo-atlantis
-#  dir: demo-atlantis
-#  autoplan:
-#    when_modified: ["*.hcl", "*.tfvars"]
+- name: demo-atlantis
+  dir: demo-atlantis
+  autoplan:
+    when_modified: ["*.hcl", "*.tfvars"]
 
 - name: central
   dir: central
