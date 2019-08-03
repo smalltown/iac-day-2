@@ -6,26 +6,32 @@ projects:
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
 
-- name: central
-  dir: central
+- name: central-iam-roles
+  dir: central/basic/iam-roles
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: central
 
-- name: development
-  dir: development
+- name: central-iam-users
+  dir: central/basic/iam-users
+  autoplan:
+    when_modified: ["**/*.hcl", "**/*.tf*"]
+  workflow: central
+
+- name: development-iam-roles
+  dir: development/basic/iam-roles
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: development
 
-- name: staging
-  dir: staging
+- name: staging-iam-roles
+  dir: staging/basic/iam-roles
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: staging
 
-- name: production
-  dir: production
+- name: production-iam-roles
+  dir: production/basic/iam-roles
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
   workflow: production
