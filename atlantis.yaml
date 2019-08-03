@@ -1,0 +1,31 @@
+version: 3
+
+projects:
+#- name: demo-atlantis
+#  dir: demo-atlantis
+#  autoplan:
+#    when_modified: ["*.hcl", "*.tfvars"]
+
+- name: central
+  dir: central
+  autoplan:
+    when_modified: ["*.hcl", "*.tfvars"]
+  workflow: central
+
+- name: development
+  dir: development
+  autoplan:
+    when_modified: ["*.hcl", "*.tfvars"]
+  workflow: development
+
+- name: staging
+  dir: staging
+  autoplan:
+    when_modified: ["*.hcl", "*.tfvars"]
+  workflow: staging
+
+- name: production
+  dir: production
+  autoplan:
+    when_modified: ["*.hcl", "*.tfvars"]
+  workflow: production
