@@ -6,32 +6,32 @@ projects:
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
 
-- name: central-iam-roles
-  dir: central/basic/iam-roles
-  autoplan:
-    when_modified: ["**/*.hcl", "**/*.tf*"]
-  workflow: central
+# - name: central-iam-roles
+#   dir: central/basic/iam-roles
+#   autoplan:
+#     when_modified: ["**/*.hcl", "**/*.tf*"]
+#   workflow: central
 
-- name: central-iam-users
-  dir: central/basic/iam-users
-  autoplan:
-    when_modified: ["**/*.hcl", "**/*.tf*"]
-  workflow: central
+# - name: central-iam-users
+#   dir: central/basic/iam-users
+#   autoplan:
+#     when_modified: ["**/*.hcl", "**/*.tf*"]
+#   workflow: central
 
-- name: development-iam-roles
-  dir: development/basic/iam-roles
-  autoplan:
-    when_modified: ["**/*.hcl", "**/*.tf*"]
-  workflow: development
+# - name: development-iam-roles
+#   dir: development/basic/iam-roles
+#   autoplan:
+#     when_modified: ["**/*.hcl", "**/*.tf*"]
+#   workflow: development
 
-- name: staging-iam-roles
-  dir: staging/basic/iam-roles
-  autoplan:
-    when_modified: ["**/*.hcl", "**/*.tf*"]
-  workflow: staging
+# - name: staging-iam-roles
+#   dir: staging/basic/iam-roles
+#   autoplan:
+#     when_modified: ["**/*.hcl", "**/*.tf*"]
+#   workflow: staging
 
-- name: production-iam-roles
-  dir: production/basic/iam-roles
-  autoplan:
-    when_modified: ["**/*.hcl", "**/*.tf*"]
-  workflow: production
+# - name: production-iam-roles
+#   dir: production/basic/iam-roles
+#   autoplan:
+#     when_modified: ["**/*.hcl", "**/*.tf*"]
+#   workflow: production
